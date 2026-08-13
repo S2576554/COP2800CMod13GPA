@@ -1,6 +1,6 @@
 // PalmerPenguins.java
-// D. Singletary
-// 3/14/25
+// Chris O'Dell
+// 08/11/2026
 // Palmer Penguins application
 
 package edu.fscj.cop2800c.penguin;
@@ -18,10 +18,7 @@ public class PalmerPenguins {
     
         // Read CSV data
         numPenguins = analyzer.readPenguins();
-        
-        // SHORT-CIRCUIT -- exit to isolate DB unit test
-        System.exit(0);
-        
+               
         // Check if any penguins were read, exit if none
         if (numPenguins == 0) {
             System.err.println(
